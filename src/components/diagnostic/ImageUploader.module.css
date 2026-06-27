@@ -1,0 +1,141 @@
+.uploaderContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  width: 100%;
+}
+
+.uploadLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  border: 2px dashed var(--color-border);
+  border-radius: var(--border-radius-lg);
+  cursor: pointer;
+  background-color: var(--color-surface);
+  transition: all 0.2s ease;
+}
+
+.dropzone:hover, .dropzone.active {
+  background-color: rgba(15, 82, 186, 0.05);
+  border-color: var(--color-primary);
+}
+
+.dropzoneContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  pointer-events: none;
+}
+
+.uploadIcon {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.dropzoneText {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.highlight {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.dropzoneHint {
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.previewContainer {
+  position: relative;
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.removeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--color-error);
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.removeBtn:hover {
+  background-color: var(--color-error);
+  color: white;
+}
+
+.imagePreview {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.filePlaceholder {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background);
+}
+
+.fileMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.successIcon {
+  color: var(--color-success);
+}
+
+.fileName {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fileSize {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}

@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install --legacy-peer-deps
+        - chmod +x node_modules/.bin/vite
+    build:
+      commands:
+        - npx vite build
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

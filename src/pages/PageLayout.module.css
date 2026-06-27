@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-xxl) var(--spacing-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--spacing-md);
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  width: fit-content;
+  transition: color 0.2s ease;
+}
+
+.backBtn:hover {
+  color: var(--color-primary);
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+}
+
+.patientIdBadge {
+  background-color: rgba(15, 82, 186, 0.1);
+  color: var(--color-primary);
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.contentBox {
+  background-color: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.placeholderText {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
